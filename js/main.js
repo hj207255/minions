@@ -294,14 +294,14 @@ var text=`
 
 /*最后是手*/
 .hands{
+  position: absolute;
+  top: 190px;
   width: 80px;
   height: 80px;
   border: 6px solid #000;
   transform: rotate(40deg);
-  position: absolute;
   background: #f9d946;
   border-radius: 30px;
-  top: 190px;
   z-index: -1;
 }
 .hands.left{
@@ -311,21 +311,23 @@ var text=`
   right: 0px;
 }
 .hands.left::after{
-  width: 6px;
-  border: 3px solid #000;
-  position: absolute;
   content: '';
-  transform: rotate(90deg);
+  display: block;
+  position: absolute;
   bottom: 19px;
   left: 9px;
-}
-.hands.right::after{
   width: 6px;
   border: 3px solid #000;
-  position: absolute;
+  transform: rotate(90deg);
+}
+.hands.right::after{
   content: '';
+  display: block;
+  position: absolute;
   bottom: 49px;
   right: 13px;
+  width: 6px;
+  border: 3px solid #000;
 }
 
 /*大功告成，小黄人画完了。*/
