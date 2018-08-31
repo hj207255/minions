@@ -1,0 +1,42 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  position: relative;
+}
+.code{
+  padding: 16px;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  left: 0;
+  background-color: #ddd;
+}
+#code{
+  width: 100%;
+  overflow: hidden;
+}
+.huaban{
+  display: flex;
+  position: fixed;
+  right: 0;
+}
+.speed{
+  width: 63px;
+  position: fixed;
+  top: 20px;
+  right: 52%;
+  z-index: 999;
+}
+.speed button{
+  padding: 5px;
+  margin: 10px;
+}
+.active{
+  box-shadow: 3px 3px 2px rgba(0,0,0,.5);
+}
